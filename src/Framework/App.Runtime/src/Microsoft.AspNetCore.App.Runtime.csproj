@@ -48,7 +48,7 @@ This package is an internal implementation of the .NET Core SDK and is not meant
     <AllowedOutputExtensionsInSymbolsPackageBuildOutputFolder>$(AllowedOutputExtensionsInSymbolsPackageBuildOutputFolder);.map</AllowedOutputExtensionsInSymbolsPackageBuildOutputFolder>
 
     <!-- Optimize the framework using the crossgen tool -->
-    <CrossgenOutput Condition="'$(Configuration)' != 'Debug'">true</CrossgenOutput>
+    <CrossgenOutput>false</CrossgenOutput>
 
     <!-- Produce crossgen profiling symbols (.ni.pdb or .map files). -->
     <GenerateCrossgenProfilingSymbols>true</GenerateCrossgenProfilingSymbols>
